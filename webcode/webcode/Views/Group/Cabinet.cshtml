@@ -1,0 +1,21 @@
+﻿@model Student
+<section id="student">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div class="stu-img col-12">
+                    <img src="~/img/@Model.Photo" />
+                </div>
+            </div>
+            <div class="about col-6">
+                <h1>@Model.Name</h1>
+                <h6>CAP:@Model.Cap</h6>
+                <p>Qrup:@Model.Group</p>
+                <p>Muellim:@Model.Group.Teacher</p>
+                <p>Qrup sahesi:@Model.Group.GroupCats.Name</p>
+                <p>Email:@Model.Email</p>
+                <p>Telefon:@Model.PhNum</p>
+            </div>
+        </div>
+    </div>
+</section>

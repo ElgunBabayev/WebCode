@@ -1,0 +1,32 @@
+﻿@model Group
+<header>
+    <div class="container">
+        <h1 class="title">@Model.Name</h1>
+        <p>Muellim:@Model.Teacher</p>
+        <p>Telebe sayi:@Model.Students.Count</p>
+        <p>Qrup sahesi: @Model.GroupCats.Name</p>
+    </div>
+</header>
+
+<section id="stview">
+    <div class="container">
+        <p>Telebeler:</p>
+        <div class="row">
+            @foreach (Student item in Model.Students )
+            {
+                <div class="col-4 mb-4">
+                    <div class="student-img">
+                        <img src="~/img/@item.Photo" />
+                    </div>
+                    <div class="student-item">
+                        <h3>@item.Name</h3>
+                        <p>@item.Email</p>
+                        <div><a href="/group/cabinet/@item.Id">Etrafli</a></div>
+                    </div>
+                </div>
+            }
+
+
+        </div>
+    </div>
+</section>

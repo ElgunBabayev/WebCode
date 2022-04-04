@@ -1,0 +1,263 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Spartan", sans-serif !important;
+  font-weight: 500 !important;
+}
+.navbar-brand img {
+  width: 150px;
+}
+
+.navbar.active {
+  background-color: white;
+}
+
+.slider-item-1 {
+  height: 100vh;
+  background-color: lime;
+  display: flex;
+  align-items: center;
+}
+.slider-item-2 {
+  height: 100vh;
+  background-color: rgb(0, 115, 255);
+  display: flex;
+  align-items: center;
+}
+
+#about .container {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.our-work {
+  padding-top: 150px;
+}
+
+#about .dig-market {
+    width: 50%;
+    float: left;
+    height: 200px;
+    border: solid 1px;
+}
+#about .dizayn {
+  width: 50%;
+  float: right;
+  height: 200px;
+  border:solid 1px;
+}
+#about .prog {
+    width: 50%;
+    float: left;
+    height: 200px;
+    border: solid 1px;
+}
+#about .sis-seb {
+    width: 50%;
+    float: right;
+    height: 200px;
+    border: solid 1px;
+}
+
+#about i {
+  margin: 20px;
+  font-size: 70px;
+}
+
+.wrap h4 {
+  font-size: 20px;
+  font-weight: 700;
+  padding-top: 50px;
+  margin-left: 20px;
+}
+
+.testi img {
+  width: 170px;
+  height: 170px;
+}
+.testi-text p {
+  font-size: 16px;
+}
+.testi-text h4 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+#contact {
+  background-color: ghostwhite;
+}
+#contact .container {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.form input {
+  font-size: 16px !important;
+}
+.form select {
+  font-size: 14px !important;
+}
+button span {
+  font-size: 16px;
+  font-weight: 700;
+  margin-left: 141px;
+  margin-right: 142px;
+}
+
+footer .container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+footer p {
+  font-size: 16px;
+}
+
+/* Group.css */
+
+.title {
+  padding-top: 200px;
+  padding-bottom: 50px;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+
+header {
+  background-color: rgb(49, 255, 49);
+}
+
+#grview {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: aliceblue;
+}
+.btn-group {
+  padding-bottom: 50px;
+}
+
+#grview .group-item {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px 60px;
+  /* display: none; */
+}
+
+.group-item i {
+  font-size: 60px;
+}
+
+.group-item h3 {
+  font-size: 20px;
+  text-align: center;
+  margin: 20px;
+  font-weight: 600;
+}
+
+.group-item p {
+  font-size: 15px;
+  text-align: center;
+  margin: 10px;
+}
+.group-item a {
+  text-decoration: none;
+  padding: 15px 40px;
+  background-color: rgb(49, 255, 49);
+  border-radius: 8px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: white;
+}
+.group-item div {
+  text-align: center;
+  padding: 15px;
+}
+/* 
+student.css */
+
+.title {
+  padding-top: 200px;
+  padding-bottom: 50px;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+header p {
+  color: white;
+  font-size: 16px;
+}
+header {
+  padding-bottom: 30px;
+}
+#stview .student-item {
+  background-color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 25px 25px;
+}
+
+#stview {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: aliceblue;
+}
+.student-item a {
+  text-decoration: none;
+  padding: 15px 40px;
+  background-color: rgb(49, 255, 49);
+  border-radius: 8px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: white;
+}
+.student-item div {
+  text-align: center;
+  padding: 15px;
+}
+.student-item h3 {
+  font-size: 30px;
+  text-align: center;
+  margin: 20px;
+  font-weight: 600;
+}
+.student-item p {
+  font-size: 15px;
+  text-align: center;
+  margin: 10px;
+}
+.student-img img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* stu-cabinet.css */
+#student {
+  background-color: rgb(49, 255, 49);
+  padding-top: 200px;
+  padding-bottom: 150px;
+}
+#student img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+#student .about {
+  padding: 70px;
+  color: white;
+}
+.about h1 {
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+.about h6 {
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.about p {
+  margin: 0;
+}

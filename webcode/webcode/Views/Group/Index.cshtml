@@ -1,0 +1,32 @@
+﻿@model GroupViewModel
+<header>
+    <div class="container">
+        <h1 class="title">Groups</h1>
+    </div>
+</header>
+<section id="grview">
+    <div class="container">
+        <div class="btn-group" role="group" aria-label="Basic example">
+            @foreach (GroupCat item in Model.GroupCats)
+            {
+                <button data-filter="@item.Id" class="btn btn-primary group-button-item">@item.Name</button>
+            }
+        </div>
+        <div class="row">
+            @foreach (Group item in Model.Groups)
+            {
+                <div class="@item.GroupCats.Id group-wrapper col-4 mb-4">
+                    <div class="group-item">
+                        <div><i class="@item.GroupCats.Icon"></i></div>
+                        <h3>@item.Name</h3>
+                        <p>@item.Teacher</p>
+                        <p> Telebe  sayi:  @item.Students.Count</p>
+                        <div><a href="/group/details/@item.Id">Etrafli</a></div>
+                    </div>
+                </div>
+            }
+
+
+        </div>
+    </div>
+</section>

@@ -1,0 +1,135 @@
+﻿@model HomeViewModel
+<section id="home">
+    <div class="banner owl-carousel">
+        @foreach (Banner item in Model.Banner)
+        {
+            <div class="slider-item-1" style="background-color:@item.Background">
+                <div class="container">
+                    <div class="col-6">
+                        <h2>@item.Title</h2>
+                        <p>
+                            @item.Text
+                        </p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</section>
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div class="col-11">
+                    <h2>tədris</h2>
+                    <h2 class="pb-5">sahələri</h2>
+                    <img class="pb-5" src="~/img/line.png" />
+                    <p>
+                        İnformasiya Texnologiyaları sahəsində bugünün və gələcəyin ən
+                        tələb edilən istiqamətləri
+                    </p>
+                </div>
+            </div>
+            <div class="wrap col-6">
+                @foreach (GroupCat item in Model.GroupCats)
+                {
+                    <div class="dig-market col-6">
+                        <i class="@item.Icon"></i>
+                        <h4>@item.Name</h4>
+                    </div>
+                }
+            </div>
+        </div>
+        <section class="our-work">
+            <div class="row">
+                <div class="content col-6 pt-5">
+                    <h2>niye</h2>
+                    <h2>code academy?</h2>
+                    <img class="pt-5" src="~/img/line.png" />
+                    <p class="pt-5">
+                        Biz dərsləri Zəmanətli Təhsil Sistemi ilə Beynəlxalq
+                        Sertifikasiya imtahanlarının kurrikulumu əsasında keçirik.
+                        Talant Mərkəzi, Mentor Sistemi kimi özəlliklər və müasir tədris
+                        metodları ilə onlara praktiki məşğələlər təklif edirik.
+                    </p>
+                </div>
+                <div class="row">
+                    @foreach (OurWork item in Model.OurWork)
+                    {
+                        <div class="testi col-2 pt-5">
+                            <img src="~/img/@item.Image" />
+                        </div>
+                        <div class="testi-text col-4 pt-5">
+                            <h4>@item.Title</h4>
+                            <p>
+                                @item.Text
+                            </p>
+                        </div>
+                    }
+                </div>
+            </div>
+        </section>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="text col-6">
+                <div class="col-8">
+                    <h2>Sualin var?</h2>
+                    <h2 class="pb-5">gel gorusek</h2>
+                    <p>
+                        Yüz dəfə eşitməkdənsə, bir dəfə görmək yaxşıdır. Bizimlə görüş
+                        təyin et, dərslərimiz, müəllimlərimiz və tədris prosesimizlə
+                        şəxsən tanış ol.
+                    </p>
+                </div>
+            </div>
+            <div class="form col-4">
+                <form action="/home/contact" method="post">
+                    <div class="row">
+                        <div class="col-6 pb-3">
+                            <input class="form-control form-control-lg"
+                                   placeholder="Ad" asp-for="Contact.Name" required/>
+                        </div>
+                        <div class="col-6 pb-3">
+                            <input class="form-control form-control-lg"
+                                   placeholder="Soyad" asp-for="Contact.Surname" required />
+                        </div>
+                        <div class="col-3 pb-3">
+                            <select class="form-select form-select-lg" asp-for="Contact.Operator" required>
+                                <option selected>055</option>
+                                <option value="010">010</option>
+                                <option value="050">050</option>
+                                <option value="060">060</option>
+                                <option value="070">070</option>
+                                <option value="077">077</option>
+                                <option value="099">099</option>
+                            </select>
+                        </div>
+                        <div class="col-9 pb-3">
+                            <input type="number"
+                                   class="form-control form-control-lg"
+                                   placeholder="XXX-XX-XX"
+                                   asp-for="Contact.PhNum" required />
+                        </div>
+                        <div class="col-12 pb-3">
+                            <select class="form-select form-select-lg" asp-for="Contact.Subject" required >
+                                @foreach (GroupCat item in Model.GroupCats)
+                                {
+                                    <option>@item.Name</option>
+                                }
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-warning btn-lg">
+                                <span>Müraciət et</span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
